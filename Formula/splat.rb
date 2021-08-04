@@ -5,29 +5,29 @@
 class Splat < Formula
   desc ""
   homepage ""
-  version "0.4.3-pre11"
+  version "0.4.3-pre12"
   license "AGPL"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre11/splat_0.4.3-pre11_darwin_amd64.tar.gz"
-      sha256 "3d50aa5ec53855964c5667a0b5e089dd6eb45d89d1dd7b2ef60eff6ea5e5b9e0"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre12/splat_0.4.3-pre12_darwin_amd64.tar.gz"
+      sha256 "6751fbb8598d77ab5268a021ef91e69066b68f3714a71b2673502f116e342eba"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre11/splat_0.4.3-pre11_darwin_arm64.tar.gz"
-      sha256 "393eeb4ff00833bb96da12d501564847bcd7c44780928a4e76509a79809d77ae"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre12/splat_0.4.3-pre12_darwin_arm64.tar.gz"
+      sha256 "599c053a6acdfc8a606db80ea597cb8c48c7020fe8aade407f6c34016a30ad80"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre11/splat_0.4.3-pre11_linux_amd64.tar.gz"
-      sha256 "bb773fe02fb16bbacb9744eebc5f4b51f7ec99c686b82b894df43258e9d67d4f"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre12/splat_0.4.3-pre12_linux_amd64.tar.gz"
+      sha256 "68622728c409b0f6e5808929ef39a9862d4f1fdb1f45b2bc928f56f1ad1cd996"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre11/splat_0.4.3-pre11_linux_arm64.tar.gz"
-      sha256 "e171cc712aa195371f26c5dce26c92a8c265a486d09f23e8194f6a54c53b9c11"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre12/splat_0.4.3-pre12_linux_arm64.tar.gz"
+      sha256 "3631b46bc9a97e1bf890acdb1a6c427f7c1ecbd47f6fe7f79406c540270c5806"
     end
   end
 
