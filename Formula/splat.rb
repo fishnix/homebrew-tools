@@ -5,29 +5,29 @@
 class Splat < Formula
   desc "Bootstrap new Spinup APIs"
   homepage "https://github.com/YaleSpinup/splat"
-  version "0.4.3-pre18"
-  license "AGPLv3"
+  version "0.4.3-pre19"
+  license "AGPL-3.0-or-later"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre18/splat_0.4.3-pre18_darwin_amd64.tar.gz"
-      sha256 "7f307a8431fcd2be0b86cb2a21276aa834768fb3ed7e42271ef387a4819736e0"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre19/splat_0.4.3-pre19_darwin_amd64.tar.gz"
+      sha256 "b347d4e6db222912f90ade693ffb1c34e5c13104036187b390b374d812707fe6"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre18/splat_0.4.3-pre18_darwin_arm64.tar.gz"
-      sha256 "9a00058549431a580bccb70384bc333e119123b3c77f4997704685de5a21a1b6"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre19/splat_0.4.3-pre19_darwin_arm64.tar.gz"
+      sha256 "61ff493dfbe7970c258537c60e74d0b179ba62f40a57aaa4eafbc3cddc88a8de"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre18/splat_0.4.3-pre18_linux_amd64.tar.gz"
-      sha256 "d2f881f5578ed1ee187020a559be6e6fc179f94260e1207692cf43ead3721ac8"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre19/splat_0.4.3-pre19_linux_amd64.tar.gz"
+      sha256 "590fb9015537c6b951cc8ee85753872167b50c18c9ca3ed41a46f71830ae271e"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre18/splat_0.4.3-pre18_linux_arm64.tar.gz"
-      sha256 "dd92885e8653bbdb1bbde7888dbb5a64ace28281a1978d68b61a8f02821b823b"
+      url "https://github.com/YaleSpinup/splat/releases/download/v0.4.3-pre19/splat_0.4.3-pre19_linux_arm64.tar.gz"
+      sha256 "e0fe76c63f0489d1092e90ede039ccc57c82114b7b0708a8c9a7d9fd5d27ef6c"
     end
   end
 
@@ -36,6 +36,6 @@ class Splat < Formula
   end
 
   test do
-    system "#{bin}/splat version"
+    system "#{bin}/splat", "version"
   end
 end
