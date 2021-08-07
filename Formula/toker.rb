@@ -5,29 +5,29 @@
 class Toker < Formula
   desc "Simple token management tool"
   homepage "https://github.com/YaleSpinup/toker"
-  version "0.2.0-pre03"
+  version "0.2.0"
   license "AGPL-3.0-or-later"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0-pre03/toker_0.2.0-pre03_darwin_amd64.tar.gz"
-      sha256 "c7be3ab58a1457a62cc539d6ca6d09df8bcc36abd4db557d78c21915eb72e47a"
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_darwin_amd64.tar.gz"
+      sha256 "4455cba3ae8346e6a8203654a28331a93a73387c9dcc5ecacaaf908356a28476"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0-pre03/toker_0.2.0-pre03_darwin_arm64.tar.gz"
-      sha256 "124d3ffff22c5125f9f1c5d7d6d3623950c92ed83641ea5abb70029f81714b6c"
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_darwin_arm64.tar.gz"
+      sha256 "82a846937a1748b8a7ff2b64a55e5241aca08c12a79376da4563a382c911c5db"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0-pre03/toker_0.2.0-pre03_linux_amd64.tar.gz"
-      sha256 "9e8073d27ecea252d8b3e9e953dd60a2e51f66c7a7c6cb326a33695db257d51c"
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_linux_amd64.tar.gz"
+      sha256 "c5b50b8e6a75acd75e0dcb80baf62a2845dc3dc58b6c999b6ac95a45d50cd2b6"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0-pre03/toker_0.2.0-pre03_linux_arm64.tar.gz"
-      sha256 "cc4504f570129a35b86efba4d531b134f47191d9e0a5d884a53e5e4f87781b22"
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_linux_arm64.tar.gz"
+      sha256 "62f3fab3afe433e000d5c67f3c7e3500974ab003563c7eb9a64e4ef9da2ebc2d"
     end
   end
 
