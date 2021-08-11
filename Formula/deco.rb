@@ -5,29 +5,29 @@
 class Deco < Formula
   desc "DockerEvironmentCOntrol"
   homepage "https://github.com/YaleUniversity/deco"
-  version "1.1.0"
+  version "1.2.0-pre02"
   license "AGPL-3.0-or-later"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleUniversity/deco/releases/download/v1.1.0/deco_1.1.0_darwin_amd64.tar.gz"
-      sha256 "6f485ffad9e0cd5cfb3c20c3724fa5dada94516a0118ae46963481029c35ad16"
+      url "https://github.com/YaleUniversity/deco/releases/download/v1.2.0-pre02/deco_1.2.0-pre02_darwin_amd64.tar.gz"
+      sha256 "1c3a230aa5c602b8508ba34790b7b2a151d0c2a8a533a28de6e1b45ba9cd62a4"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YaleUniversity/deco/releases/download/v1.1.0/deco_1.1.0_darwin_arm64.tar.gz"
-      sha256 "6769833895b98546bedf7fb3d951bef3e8c844529b9bceecb1bbd087704e582c"
+      url "https://github.com/YaleUniversity/deco/releases/download/v1.2.0-pre02/deco_1.2.0-pre02_darwin_arm64.tar.gz"
+      sha256 "6d89b35c844ad4427fb3e2da5fe1dec6256f2de6d32c108862e1d0490a104eff"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleUniversity/deco/releases/download/v1.1.0/deco_1.1.0_linux_amd64.tar.gz"
-      sha256 "9ed7cdbab12d122b266f8478f010ebf9c4bfa091f7613db46349d4f74d1e7f6b"
+      url "https://github.com/YaleUniversity/deco/releases/download/v1.2.0-pre02/deco_1.2.0-pre02_linux_amd64.tar.gz"
+      sha256 "70bb6a173bad16984862c5cdcf52cb4c39e26f8fa1990d0588eb155467057bdd"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YaleUniversity/deco/releases/download/v1.1.0/deco_1.1.0_linux_arm64.tar.gz"
-      sha256 "68b5272c0d5ccc16297f8b3010e926ef40dd80cf5934653e90234b5086fcb79e"
+      url "https://github.com/YaleUniversity/deco/releases/download/v1.2.0-pre02/deco_1.2.0-pre02_linux_arm64.tar.gz"
+      sha256 "2a2abb5c8c2dc2df87eded130e999c2b2aa329741302454a616bed433c293fb4"
     end
   end
 
