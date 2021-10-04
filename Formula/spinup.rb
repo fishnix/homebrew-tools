@@ -5,29 +5,29 @@
 class Spinup < Formula
   desc "Simple command-line interface for spinup"
   homepage "https://github.com/YaleSpinup/spinup-cli"
-  version "0.4.0-pre06"
+  version "0.4.0"
   license "AGPL-3.0-or-later"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0-pre06/spinup-cli_0.4.0-pre06_darwin_amd64.tar.gz"
-      sha256 "2774e98c48a4fb4f1d5ef47d391eda0950abe8fba2e86b2d06e265bb3f4d78d0"
+      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0/spinup-cli_0.4.0_darwin_amd64.tar.gz"
+      sha256 "0c9743d1518441d36525d6e394d16760588e2b376a1066337e1a979b4ce83a7a"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0-pre06/spinup-cli_0.4.0-pre06_darwin_arm64.tar.gz"
-      sha256 "cc4964b7cea91f95a5f69e993845a5dbdc718fa9bebc2f30fe2ecaf0e13df085"
+      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0/spinup-cli_0.4.0_darwin_arm64.tar.gz"
+      sha256 "568e0dc3801b987f8a14fc07259e01b80a1e287981be572aac27cfff5780fe45"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0-pre06/spinup-cli_0.4.0-pre06_linux_amd64.tar.gz"
-      sha256 "51990ed1cc1f0fda887fd5fcb184a030d53b5501dc1096ac6de95931931d11e9"
+      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0/spinup-cli_0.4.0_linux_amd64.tar.gz"
+      sha256 "ca49ce20af61e60d40b775fbdc479a56ef3cdbd37e5aa6a6eb8139104e114312"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0-pre06/spinup-cli_0.4.0-pre06_linux_arm64.tar.gz"
-      sha256 "e3129c1ff73242af2a9acf7c7f286b83b0d1d3246672576159e2301374e4e951"
+      url "https://github.com/YaleSpinup/spinup-cli/releases/download/v0.4.0/spinup-cli_0.4.0_linux_arm64.tar.gz"
+      sha256 "fcd1c7b16fe0d0a8e55eecd774629f24cee27c079c4d6be3d5a27b0709e8468f"
     end
   end
 
