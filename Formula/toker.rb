@@ -5,34 +5,45 @@
 class Toker < Formula
   desc "Simple token management tool"
   homepage "https://github.com/YaleSpinup/toker"
-  version "0.2.0"
+  version "0.2.1-pre01"
   license "AGPL-3.0-or-later"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_darwin_amd64.tar.gz"
-      sha256 "4455cba3ae8346e6a8203654a28331a93a73387c9dcc5ecacaaf908356a28476"
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.1-pre01/toker_0.2.1-pre01_darwin_amd64.tar.gz"
+      sha256 "84c68e8f0abad18b4208fd86286f4cd8ee648dacf4674420c5db1db333f356fe"
+
+      def install
+        bin.install "toker"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_darwin_arm64.tar.gz"
-      sha256 "82a846937a1748b8a7ff2b64a55e5241aca08c12a79376da4563a382c911c5db"
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.1-pre01/toker_0.2.1-pre01_darwin_arm64.tar.gz"
+      sha256 "e9477e9e45c658d055b597e42d42f634df87f75f727e4a43f1a2142ea7c69cee"
+
+      def install
+        bin.install "toker"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_linux_amd64.tar.gz"
-      sha256 "c5b50b8e6a75acd75e0dcb80baf62a2845dc3dc58b6c999b6ac95a45d50cd2b6"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.0/toker_0.2.0_linux_arm64.tar.gz"
-      sha256 "62f3fab3afe433e000d5c67f3c7e3500974ab003563c7eb9a64e4ef9da2ebc2d"
-    end
-  end
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.1-pre01/toker_0.2.1-pre01_linux_arm64.tar.gz"
+      sha256 "972ff84f9de566252d136017e1ca17f06a99d8e2e06de5c151d0aaaa4b679a58"
 
-  def install
-    bin.install "toker"
+      def install
+        bin.install "toker"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/YaleSpinup/toker/releases/download/v0.2.1-pre01/toker_0.2.1-pre01_linux_amd64.tar.gz"
+      sha256 "999c5714c6f2b7a9e5cd03355e2b4b8949cf70c733a37b020706dd146822b702"
+
+      def install
+        bin.install "toker"
+      end
+    end
   end
 
   test do
